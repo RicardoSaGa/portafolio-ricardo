@@ -1,0 +1,54 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fdf6e3;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: #fefcfb;
+  padding: 5rem 1rem;
+}
+
+#nombre {
+  font-size: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333;
+  width: 0;
+  animation: typing 3.5s steps(20) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.skills img {
+  width: 70px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.skills img:hover {
+  transform: translateY(-8px);
+}
+
+.carousel-item img {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #f1ede4;
+}
